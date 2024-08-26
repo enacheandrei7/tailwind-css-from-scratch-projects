@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import EmailSubscribeCard from "./components/emailSubscribeCard";
 import PricingGrids from "./components/PricingGrids";
 import ProductModal from "./components/ProductModal";
+import LoginModal from "./components/LoginModal";
 import NotFound from "./components/NotFound";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           path="/product-modal"
           element={<ProductModal></ProductModal>}
         ></Route>
+        <Route path="/login-modal" element={<LoginModal></LoginModal>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
     </Router>
